@@ -10,7 +10,7 @@
 
 ## Pipeline
 
-<img src="PipeLine.png" width="850" />
+<img src="./PipeLine.png" width="850" />
 
 ---
 
@@ -124,18 +124,7 @@ python gine_v7.py \
 * 마지막 **4개 JSON을 테스트셋**으로 사용하며,
 * 파일별로 ACC / Confusion Matrix / classification report / Macro-F1를 출력합니다.
 
----
-
-## Key techniques implemented
-
-* **Mini-batch training** (PyG DataLoader)
-* **Grid Snap** (`snap_grid` meters)
-* **kNN auxiliary edges** + weighted edge attributes (`knn_weight`)
-* **DropEdge** (학습 시 랜덤 엣지 드롭)
-* **Train-only normalization** (node/edge/speed)
-* **Soft Label CE** + **Focal Loss**
-* **Prior-bias calibration** (검증 세트 기반 logit_bias)
-* **Regression hint to logits** + **Temperature scaling**
+> 현재 운영 방식: `.gitignore`에서 `*.pt`, `*.npz`를 무시하도록 설정하면, 레포에는 코드/데이터/문서만 올라가고 모델 산출물은 제외됩니다.
 
 ---
 
@@ -147,8 +136,7 @@ python gine_v7.py \
 ├─ data/
 │  ├─ YYYY-MM-DD_HH.json
 │  ├─ ...
-├─ assets/
-│  └─ PipeLine.png
+├─ PipeLine.png
 ├─ requirements.txt
 └─ README.md
 ```
@@ -157,7 +145,7 @@ python gine_v7.py \
 
 ## License
 
-연구/학습 목적이라면 MIT 권장 (상황에 맞게 선택)
+Research/education purpose: MIT recommended (choose as needed)
 
 ```
 ```
