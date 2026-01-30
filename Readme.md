@@ -1,4 +1,4 @@
-````md
+
 # GINE Road Speed Quantile (Classification + Regression)
 
 도로 네트워크를 **그래프(Graph)** 로 구성한 뒤,  
