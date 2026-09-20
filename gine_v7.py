@@ -1,3 +1,7 @@
+# Historical experimental baseline.
+# This implementation is preserved for research reproducibility.
+# See README.md and docs/research-notes.md for known limitations.
+
 # ====== GINE (Quantile Classification + Speed Regression, v6-posthoc, mini-batch) ======
 # - 미니배치(DataLoader)로 그래프별 독립 학습 → edge_index 재사용 문제 제거
 # - 좌표 스냅(그리드 스냅, 기본 8m)로 실제 도로 연결 복원
